@@ -23,7 +23,7 @@ public partial class Product
     [Display(Name = "Categoria")]
     public int? CategoryId { get; set; }
 
-    [Display(Name = "Marca")]
+    [Display(Name = "Marca")] 
     public int? BrandId { get; set; }
 
     public virtual Brand? Brand { get; set; }
