@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARPA20250319.AppWebMVC", "ARPA20250319.AppWebMVC\ARPA20250319.AppWebMVC.csproj", "{73797D40-3D58-43FD-B120-7C15E4F153CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73797D40-3D58-43FD-B120-7C15E4F153CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73797D40-3D58-43FD-B120-7C15E4F153CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73797D40-3D58-43FD-B120-7C15E4F153CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73797D40-3D58-43FD-B120-7C15E4F153CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3D82A16B-649D-4D72-A171-E17A05DD3BAD}
+	EndGlobalSection
+EndGlobal
