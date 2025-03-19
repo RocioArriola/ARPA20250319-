@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ARPA20250319.AppWebMVC.Models;
 
@@ -22,6 +23,14 @@ public partial class User
     [DataType(DataType.Password)]
     [StringLength(40, MinimumLength = 5, ErrorMessage = "El passowrd debe tener entre 5 y 50 caracteres.")]
     public string PasswordHash { get; set; } = null!;
+
+    [NotMapped]
+    [StringLength(40, MinimumLength = 5, ErrorMessage = "El password debe tener entre 5 y 50 caracteres.")]
+    [Display(Name = "Confirmar Password")]
+    [DataType(DataType.Password)]
+    [Compare("Password", ErrorMessage = "Las contraseñas no coinciden.")]
+    public string? ConfirmarPassword { get; set; } = null!;
+
 
     [Display(Name = "Rol")]
     public string Role { get; set; } = null!;
