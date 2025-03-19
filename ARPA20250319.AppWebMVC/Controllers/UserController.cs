@@ -15,6 +15,7 @@ using System.Security.Claims;
 
 namespace ARPA20250319.AppWebMVC.Controllers
 {
+    [Authorize (Roles ="ADMINISTRADOR")]
     public class UserController : Controller
     {
         private readonly Test20250319DbContext _context;
@@ -63,6 +64,7 @@ namespace ARPA20250319.AppWebMVC.Controllers
         {
             if (ModelState.IsValid)
             {
+                user.PasswordHash = CalcularHashMD5(user.PasswordHash);
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

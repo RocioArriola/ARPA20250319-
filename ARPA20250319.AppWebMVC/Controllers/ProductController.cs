@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ARPA20250319.AppWebMVC.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace ARPA20250319.AppWebMVC.Controllers
 {
+    [Authorize(Roles = "GERENTE")]
     public class ProductController : Controller
     {
         private readonly Test20250319DbContext _context;
